@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 while True:
     try:   	
-    	m1,m2,m3=map(int,raw_input("Enter m1 m2 m3 (space separated integers) ").split())        
+    	m1,m2,m3=map(int,input("Enter m1 m2 m3 (space separated integers) ").split())        
     	alpha = np.arange(0.0, 1.0, 0.01)
     	E1 = (alpha - m1 +m2+m3)**2 + (m1-m2+m3)**2 + (m1+m2-m3)**2 #from gamma to X
     	E2 = (1 - m1 + m2 + m3)**2 + (alpha/2 + m1 - m2 + m3)**2 + (m1 + m2 - m3)**2 #X to W
